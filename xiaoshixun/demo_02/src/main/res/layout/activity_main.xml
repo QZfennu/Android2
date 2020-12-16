@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_a"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="请输入账号"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_b"
+        android:hint="请输入验证码"
+        app:layout_constraintTop_toBottomOf="@id/et_a"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt"
+        app:layout_constraintTop_toTopOf="@id/et_b"
+        app:layout_constraintBottom_toBottomOf="@id/et_b"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="验证码"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_c"
+        app:layout_constraintTop_toBottomOf="@id/et_b"
+        android:hint="请输入密码"
+        />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_a"
+        app:layout_constraintTop_toBottomOf="@id/et_c"
+        android:text="登录"
+        android:textSize="30dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

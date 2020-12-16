@@ -1,0 +1,4 @@
+rootProject.name='xiaoshixun'
+include ':app'
+include ':demo_01'
+include ':demo_02'
